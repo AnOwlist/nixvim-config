@@ -37,7 +37,7 @@
     bufferline.enable = true;
     lightline = {
       enable = true;
-      settings.colorscheme = "one";
+      settings.colorscheme = "nightfox";
     };
     wilder = {
       enable = true;
