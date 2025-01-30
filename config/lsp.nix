@@ -1,16 +1,9 @@
-{ pkgs, ... }: {
+{
   plugins = {
     lsp = {
       enable = true;
-      inlayHints = true;
       servers = {
-        clangd = {
-          enable = true;
-          onAttach.function = ''
-            require("clangd_extensions.inlay_hints").setup_autocmd()
-            require("clangd_extensions.inlay_hints").set_inlay_hints()
-          '';
-        };
+        clangd.enable = true;
         gopls.enable = true;
         kotlin_language_server.enable = true;
         nixd.enable = true;
@@ -51,22 +44,5 @@
         };
       };
     };
-    clangd-extensions = {
-      enable = true;
-      settings.inlay_hints.inline = false;
-    };
   };
-
-  extraPlugins = [
-    (pkgs.vimUtils.buildVimPlugin {
-      name = "lsp-endhints";
-      src = pkgs.fetchFromGitHub {
-        owner = "chrisgrieser";
-        repo = "nvim-lsp-endhints";
-        rev = "26b070554fce619b870700ea64232bbd80bbc6a7";
-        hash = "sha256-cMv9c72xjNNtjGCdf3pGnTWMTRmPgILcYX6RY61PKqk=";
-      };
-    })
-  ];
-  extraConfigLua = "require('lsp-endhints').enable()";
 }

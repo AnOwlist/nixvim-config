@@ -22,6 +22,5 @@
         };
       };
     };
-    rainbow-delimiters.enable = true;
   };
 }

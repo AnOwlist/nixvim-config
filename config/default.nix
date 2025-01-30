@@ -21,7 +21,13 @@
     ./ccc.nix
   ];
 
-  colorschemes.one.enable = true;
+  # colorschemes.ayu.enable = true;
+  # colorschemes.base16.enable = true;
+  # colorschemes.vscode.enable = true;
+  colorschemes.nightfox.enable = true;
+  # colorschemes.onedark.enable = true;
+  # colorschemes.poimandres.enable = true;
+
   globals.mapleader = " ";
 
   plugins = {
