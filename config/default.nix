@@ -24,8 +24,8 @@
   # colorschemes.ayu.enable = true;
   # colorschemes.base16.enable = true;
   # colorschemes.vscode.enable = true;
-  colorschemes.nightfox.enable = true;
-  # colorschemes.onedark.enable = true;
+  # colorschemes.nightfox.enable = true;
+  colorschemes.onedark.enable = true;
   # colorschemes.poimandres.enable = true;
 
   globals.mapleader = " ";
@@ -37,13 +37,13 @@
     bufferline.enable = true;
     lightline = {
       enable = true;
-      settings.colorscheme = "nightfox";
+      settings.colorscheme = "one";
+      # settings.colorscheme = "onedark";
     };
     wilder = {
       enable = true;
       modes = [ ":" "/" "?" ];
     };
-    noice.enable = true;
     gitsigns = {
       enable = true;
       settings.current_line_blame = true;
