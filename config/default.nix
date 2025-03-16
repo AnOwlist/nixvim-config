@@ -44,6 +44,7 @@
       enable = true;
       modes = [ ":" "/" "?" ];
     };
+    noice.enable = true;
     gitsigns = {
       enable = true;
       settings.current_line_blame = true;
