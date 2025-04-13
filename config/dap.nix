@@ -120,7 +120,7 @@ in {
       mode = "n";
       key = "<leader>da";
       action =
-        ":make<cr><cmd>lua require('dap').continue({ before = get_args })<cr>";
+        "<cmd>lua require('dap').continue({ before = get_args })<cr>";
       options = {
         silent = true;
         desc = "Run with Args";
