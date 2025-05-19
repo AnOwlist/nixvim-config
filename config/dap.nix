@@ -30,7 +30,10 @@ in {
       };
     };
 
-    configurations = { cpp = [ codelldb-config ]; };
+    configurations = {
+      cpp = [ codelldb-config ];
+      c = [ codelldb-config ];
+    };
 
     signs = {
       dapBreakpoint = {
@@ -119,8 +122,7 @@ in {
     {
       mode = "n";
       key = "<leader>da";
-      action =
-        "<cmd>lua require('dap').continue({ before = get_args })<cr>";
+      action = "<cmd>lua require('dap').continue({ before = get_args })<cr>";
       options = {
         silent = true;
         desc = "Run with Args";
