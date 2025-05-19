@@ -50,6 +50,7 @@
       settings.current_line_blame = true;
     };
     markdown-preview.enable = true;
+    render-markdown.enable = true;
   };
 
   extraPlugins = with pkgs.vimPlugins; [ mkdir-nvim ];
