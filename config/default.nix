@@ -24,7 +24,7 @@
   ];
 
   colorschemes.onedark.enable = true;
-  highlightOverride.Normal.bg = "none";
+  # highlightOverride.Normal.bg = "none";
   globals.mapleader = " ";
 
   plugins = {
