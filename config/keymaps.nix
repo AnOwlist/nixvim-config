@@ -32,14 +32,14 @@
       key = "<S-h>";
       action = "10h";
     }
-    {
-      key = "d";
-      action = ''"_d'';
-    }
-    {
-      key = "D";
-      action = ''"_D'';
-    }
+    # {
+    #   key = "d";
+    #   action = ''"_d'';
+    # }
+    # {
+    #   key = "D";
+    #   action = ''"_D'';
+    # }
     {
       key = "c";
       action = ''"_c'';
@@ -56,18 +56,18 @@
       key = "S";
       action = ''"_S'';
     }
-    {
-      key = "x";
-      action = "d";
-    }
-    {
-      key = "xx";
-      action = "dd";
-    }
-    {
-      key = "X";
-      action = "D";
-    }
+    # {
+    #   key = "x";
+    #   action = "d";
+    # }
+    # {
+    #   key = "xx";
+    #   action = "dd";
+    # }
+    # {
+    #   key = "X";
+    #   action = "D";
+    # }
     {
       mode = "n";
       key = "q:";
