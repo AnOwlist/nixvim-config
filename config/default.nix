@@ -23,7 +23,7 @@
     ./dropbar.nix
   ];
 
-  colorschemes.one.enable = true;
+  colorschemes.onedark.enable = true;
   highlightOverride.Normal.bg = "none";
   globals.mapleader = " ";
 
